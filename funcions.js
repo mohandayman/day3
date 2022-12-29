@@ -7,7 +7,7 @@ const convertToPascal = inputText => {
         if (inputText[i - 1] == " ") { // if new word 
             retval += inputText[i].toUpperCase(); // capitlize the elemnt after the space 
         } else {
-            retval += inputText[i]; // assign anothe chars
+            retval += inputText[i].toLowerCase(); // assign anothe chars
         }
     }
     return retval;
